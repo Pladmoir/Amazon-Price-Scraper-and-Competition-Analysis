@@ -1,0 +1,24 @@
+[project]
+name = "amazon-price-scraper-and-competition-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pladmoir", email = "trandhawa2007@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.1",
+    "langchain-openai>=1.6.2",
+    "openai>=3.14.1",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+    "tinydb>=4.9.0",
+]
+
+[project.scripts]
+amazon-price-scraper-and-competition-analysis = "amazon_price_scraper_and_competition_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
